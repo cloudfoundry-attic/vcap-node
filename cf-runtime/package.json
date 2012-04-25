@@ -1,0 +1,24 @@
+{
+  "name" : "cf-runtime",
+  "version" : "0.0.1",
+  "author" : "VMware <mariash@vmware.com>",
+  "description" : "Cloud Foundry API module",
+  "keywords" : [ "cloud foundry", "cloudfoundry" ],
+  "homepage" : "http://cloudfoundry.com",
+  "repository" : {
+    "type" : "git",
+    "url" : "git://github.com/cloudfoundry/vcap-node/cf-runtime"
+  },
+  "dependencies" : {
+    "mongodb" : "0.9.x",
+    "redis" : "0.7.x",
+    "mysql" : "0.9.x",
+    "amqp" : "0.1.x",
+    "pg" : "0.6.x"
+  },
+  "main" : "./lib",
+  "engines": { "node": ">= 0.4.0" },
+  "scripts" : {
+    "test" : "node tests/run.js"
+  }
+}

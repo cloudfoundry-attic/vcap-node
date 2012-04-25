@@ -1,0 +1,38 @@
+{
+  "mysql"      : {
+    "host"     : "localhost",
+    "port"     : "3306",
+    "username" : "",
+    "password" : "",
+    "name"     : "test"
+  },
+  "mongodb"    : {
+    "host"     : "localhost",
+    "port"     : "27017",
+    "username" : "",
+    "password" : "",
+    "db"       : "db"
+  },
+  "redis"      : {
+    "host"     : "localhost",
+    "port"     : "6379",
+    "password" : "",
+    "name"     : "test"
+  },
+  "postgresql" : {
+    "host"     : "localhost",
+    "port"     : "5432",
+    "username" : "",
+    "password" : "",
+    "name"     : "test"
+  },
+  "rabbitmq"   : {
+    "host"     : "",
+    "port"     : "",
+    "username" : "",
+    "password" : "",
+    "name"     : "",
+    "vhost"    : "",
+    "url"      : "amqp://"
+  }
+}
