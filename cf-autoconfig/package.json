@@ -1,0 +1,20 @@
+{
+  "name" : "cf-autoconfig",
+  "version" : "0.1.0",
+  "author" : "VMware <mariash@vmware.com>",
+  "description" : "Cloud Foundry auto-configuration module",
+  "keywords" : [ "cloud foundry", "cloudfoundry" ],
+  "homepage" : "http://cloudfoundry.com",
+  "repository" : {
+    "type" : "git",
+    "url" : "git://github.com/cloudfoundry/vcap-node/tree/master/cf-autoconfig"
+  },
+  "dependencies" : {
+    "cf-runtime" : "0.0.x",
+    "glob" : "3.1.x"
+  },
+  "main" : "./lib/index",
+  "scripts" : {
+    "test" : "node tests/run.js"
+  }
+}
