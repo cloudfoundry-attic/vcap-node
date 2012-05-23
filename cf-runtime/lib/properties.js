@@ -44,13 +44,29 @@ function CloudApp (env) {
         s.version = serviceParsedName[1];
         var creds = list[i].credentials;
 
-        if (s.label == "mongodb") {
+        switch (s.label) {
+
+        case "mongodb" :
           s.db = creds.db;
-          s.url = "mongodb://" + creds.username;
-          if (creds.password) s.url += ":" + creds.password;
-          s.url += "@" + creds.host + ":" + creds.port + "/" + creds.db;
-        }
-        else if (s.label == "rabbitmq") {
+          s.url = generateUrl("mongodb", creds);
+          break;
+
+        case "postgresql" :
+          s.database = creds.name;
+          s.url = generateUrl("postgresql", creds);
+          break;
+
+        case "mysql" :
+          s.database = creds.name;
+          s.url = generateUrl("mysql", creds);
+          break;
+
+        case "redis" :
+          s.database = creds.name;
+          s.url = generateUrl("redis", creds);
+          break;
+
+        case "rabbitmq" :
           s.vhost = creds.vhost;
 
           if (creds.url !== undefined) {
@@ -64,9 +80,11 @@ function CloudApp (env) {
             creds.username = auth[0];
             creds.password = auth[1];
           }
-        }
-        else {
+          break;
+
+        default:
           s.database = creds.name;
+
         }
 
         s.username = creds.username;
@@ -84,4 +102,13 @@ function CloudApp (env) {
   }
 
   return self;
+}
+
+function generateUrl (protocol, creds) {
+  var db = creds.db || creds.name;
+  var url = protocol + "://";
+  if (creds.username) url += creds.username;
+  if (creds.password) url += ":" + creds.password;
+  url += "@" + creds.host + ":" + creds.port + "/" + db;
+  return url;
 }
