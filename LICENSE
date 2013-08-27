@@ -1,3 +1,4 @@
+
 				Apache License
            Version 2.0, January 2004
         http://www.apache.org/licenses/
@@ -201,36 +202,30 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 
-===========================================================================
-VCAP Node 09012012
-
-VCAP Node 09012012 : includes a number of subcomponents with
-separate copyright notices and license terms.  The product that 
-includes this file does not necessarily use all the open source 
-subcomponents referred to below. Your use of the source
-code for the these subcomponents is subject to the terms and
-conditions of the following licenses.
+=======================================================================   
 
 
+VCAP Node:
+
+VCAP Node: includes a number of subcomponents with separate copyright 
+notices and license terms.  The product that includes this file
+does not necessarily use all the open source subcomponents referred 
+to below. Your use of the source code for the these subcomponents 
+is subject to the terms and conditions of the following licenses.
 
 SECTION 1: BSD-STYLE, MIT-STYLE, OR SIMILAR STYLE LICENSES
 
-   >>> amqp-0.1.0
-   >>> glob-3.1.0
-   >>> mysql-0.9.0
+   >>> amqp-0.1.3
+   >>> glob-3.1.11
+   >>> mysql-0.9.6
    >>> pg-0.6.0
-   >>> redis-0.7.0
+   >>> redis-0.7.2
 
 
 
 SECTION 2: Apache License, V2.0
 
-   >>> cf-autoconfig-0.1.0
-   >>> cf-runtime-0.0.0
-   >>> cf-runtime-0.0.1
-   >>> mongodb-0.9.0
-
-
+   >>> mongodb-0.9.4-5
 
 
 --------------- SECTION 1:  BSD-STYLE, MIT-STYLE, OR SIMILAR STYLE LICENSES ----------
@@ -238,9 +233,9 @@ SECTION 2: Apache License, V2.0
 BSD-STYLE, MIT-STYLE, OR SIMILAR STYLE LICENSES are applicable to the following component(s).
 
 
->>> amqp-0.1.0
+>>> amqp-0.1.3
 
-Copyright 2012 Jason Pincin
+Copyright 2010 Xavier Shay and Joyent, Inc., Ryan Dahl, Stephane Alnet
 
 All rights reserved.
 
@@ -263,7 +258,7 @@ FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 IN THE SOFTWARE.
 
 
->>> glob-3.1.0
+>>> glob-3.1.11
 
 Copyright (c) Isaac Z. Schlueter ("Author")
 All rights reserved.
@@ -294,27 +289,27 @@ OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
->>> mysql-0.9.0
+>>> mysql-0.9.6
 
 Copyright (c) 2010 Felix Geisendrfer (felix@debuggable.com)
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ THE SOFTWARE.
 
 
 >>> pg-0.6.0
@@ -329,9 +324,7 @@ IN NO EVENT SHALL THE UNIVERSITY OF CALIFORNIA BE LIABLE TO ANY PARTY FOR DIRECT
 THE UNIVERSITY OF CALIFORNIA SPECIFICALLY DISCLAIMS ANY WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE SOFTWARE PROVIDED HEREUNDER IS ON AN "AS IS" BASIS, AND THE UNIVERSITY OF CALIFORNIA HAS NO OBLIGATIONS TO PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.
 
 
->>> redis-0.7.0
-
-LICENSE - "MIT License"
+>>> redis-0.7.2
 
 Copyright (c) 2010 Matthew Ranney, http://ranney.com/
 
@@ -347,43 +340,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 Apache License, V2.0 is applicable to the following component(s).
 
 
->>> cf-autoconfig-0.1.0
-
-vcap-node
-
-Copyright (c) 2012 VMware, Inc. All Rights Reserved.
-
-This product is licensed to you under the Apache License, Version 2.0 (the "License").
-You may not use this product except in compliance with the License.
-
-This product includes a number of subcomponents with
-separate copyright notices and license terms. Your use of these
-subcomponents is subject to the terms and conditions of the
-subcomponent's license, as noted in the LICENSE file.
-
-
->>> cf-runtime-0.0.0
-
-cap-node
-Copyright (c) 2012 VMware, Inc. All Rights Reserved.
-
-This product is licensed to you under the Apache License, Version 2.0 (the "License").
-You may not use this product except in compliance with the License.
-
-This product includes a number of subcomponents with
-separate copyright notices and license terms. Your use of these
-subcomponents is subject to the terms and conditions of the
-subcomponent's license, as noted in the LICENSE file.
-
-
->>> cf-runtime-0.0.1
-
-Copyright (c) 2011-2012 VMware, Inc. 
-
-Please see the LICENSE file.
-
-
->>> mongodb-0.9.0
+>>> mongodb-0.9.4-5
 
 License
 
@@ -406,15 +363,14 @@ available (as would be noted above), you may obtain a copy of
 the source code corresponding to the binaries for such open
 source components and modifications thereto, if any, (the
 "Source Files"), by downloading the Source Files from VMware's website at
-http://www.vmware.com/download/open_source.html, or by sending a request, with
-your name and address to: VMware, Inc., 3401 Hillview Avenue,
-Palo Alto, CA 94304,United States of America. All such
-requests should clearly specify: OPEN SOURCE FILES REQUEST,
-Attention General Counsel. VMware shall mail a copy of the
+http://www.vmware.com/download/open_source.html, or by sending a request, 
+with your name and address to: GoPivotal, Inc., 1900 S. Norfolk Street #125, 
+San Mateo, CA 94403, Attention: General Counsel. All such requests 
+should clearly specify: OPEN SOURCE FILES REQUEST,
+Attention General Counsel. GoPivotal shall mail a copy of the
 Source Files to you on a CD or equivalent physical medium. This
 offer to obtain a copy of the Source Files is valid for three
-years from the date you acquired this Software product. Alternatively,
-the Source Files may accompany the VMware product.
+years from the date you acquired this Software product. 
+Alternatively, the Source Files may accompany the GoPivotal product.
 
-
-[CFVCAPNODE09012012NV121912]
+[CFVCAPNODE8152013SS082113]
